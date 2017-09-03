@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Get link JavHD | Jav.Tokyo</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <meta property="og:title" content="Get link JavHD | Jav.Tokyo"/>
+  <meta property="og:url" content="https://jav.tokyo"/>
+  <meta property="og:description" content="Get link JavHD for free, watch JavHD online" />
+  <meta property="og:image" content="https://jav.tokyo/static/og.png" />
+  <meta property="og:type" content="website" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/static/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+  <link rel="manifest" href="/static/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="/static/jwplayer/jwplayer.js"></script>
+  <script>jwplayer.key="Ywok59g9j93GtuSU7+axNzjIp/TBfiK4s0vvYg=="</script>
+</head>
+<body>
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Jav.Tokyo</a></div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Eros</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Get link JavHD for free, watch JavHD online</h5>
+      </div>
+      <div class="row center">
+        <div class="input-field col s12">
+          <form action="" method="post" role="form">
+            {{ form.link(class_="validate") }}
+            <label for="link">Nhập Link</label>
+            <button id = "btnSubmit" class="btn waves-effect waves-light" type="submit" name="action">Get Link
+            <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <br>
+      <div class="row center loading">       
+      </div>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            {% if 'player' in category: %}
+              <div id="player"></div>
+              <script type="text/JavaScript">
+                var playerInstance = jwplayer("player");
+                playerInstance.setup({
+                file: "{{ message | safe }}",
+                image: "/static/player.jpg",
+                width: "100%",
+                aspectratio: "16:9"});
+              </script>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Tốc độ cao</h5>
+            <p class="light">Backend được viết bằng Python 3, sử dụng kiến trúc serverless và autoscaling với CDN chất lượng cao.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">visibility_off</i></h2>
+            <h5 class="center">Không quảng cáo</h5>
+            <p class="light">Trang web này không chứa quảng cáo, không sử dụng link kiếm tiền hay chứa cookies theo dõi người dùng.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Hỗ trợ API</h5>
+            <p class="light">Cung cấp private API để các nhà phát triển sử dụng tính năng của Eros vào sản phẩm khác.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">announcement</i>Thông tin</div>
+        <div class="collapsible-body"><span>Nếu bạn thích Eros, hãy star project trên GitHub, đóng góp tài khoản VIP Zing, Fshare, 4share, JavHD... hoặc donate PayPal commine7@gmail.com để admin có thể duy trì site. Muốn sử dụng API ? Liên hệ ngay với admin để đăng ký API key. Miễn phí và sẽ luôn như vậy.</span></div>
+      </li>
+    </ul>
+    <br><br>
+  </div>
+  <footer class="page-footer grey darken-4">
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="grey-text text-lighten-4">Made by <a href="https://www.facebook.com/Virrie" rel="nofollow">Quỳnh Vir</a>. Contact him at <a href="https://t.me/YuriVir">t.me/YuriVir</a>.</p>
+        <p class="grey-text text-lighten-4">Code released under the <a href="https://github.com/mrvir/Eros/blob/master/LICENSE">MIT License</a>.</p>
+        <p class="grey-text text-lighten-4">Proudly powered by <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#btnSubmit").click(function(){
+        if ($("#load").length == 0){
+          $( ".loading" ).append('<div id="load" class="preloader-wrapper small active"><div class="spinner-layer spinner-green-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>');
+        }
+      });
+      $("#load").remove();
+    });   
+  </script>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        {% if 'success' in category or 'fail' in category: %}
+          <script type="text/javascript">
+            $(document).ready(function(){
+              Materialize.toast('{{ message }}', 5000)
+              });
+          </script>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  </body>
+</html>
